@@ -1,4 +1,5 @@
 ﻿using System;
+using static HammerBitcoin.Utilities;
 
 namespace HammerBitcoin
 {
@@ -11,7 +12,7 @@ namespace HammerBitcoin
             {
                 BitcoinMiner game = new BitcoinMiner();
                 game.Play();
-                playAgain = BitcoinMiner.GetYesOrNo("Would you like to play again?");
+                playAgain = GetYesOrNo("Would you like to play again?");
             }
             Console.WriteLine("Goodbye");
         }
